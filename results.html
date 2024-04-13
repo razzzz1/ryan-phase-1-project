@@ -65,13 +65,19 @@
     </tbody>
   </table>
   <h1>change exam</h1>
-  <form id="optionList">
-    <select id="selectOption" name="options">
+  <form id="redirectForm">
+    <select id="optionSelect" name="options">
    <option value="end of term.html">end of term1 examinations</option>
    <option value="cat1.html">cat1</option>
    <option value="cat2.html">cat 2</option>
     </select>
-    
+    <button type="button" onclick="redirectToPage()">change exam</button>
+    <script>
+       function redirectToPage() {
+        var selectedOption = document.getElementsById("optionSelect").value;
+        window.location.href = selectedOption;
+       }
+    </script>
    <div><img src="1712753966291.png" alt="1712753966291.png"></div>
   <div class="table"> 
     <thead>
